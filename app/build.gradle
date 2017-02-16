@@ -1,0 +1,85 @@
+apply plugin: 'com.android.application'
+
+android {
+    signingConfigs {
+        release {
+            keyAlias 'key'
+            keyPassword '123456'
+            storeFile file('E:/Work_space/ky/MyDoorkey.jks')
+            storePassword '123456'
+        }
+    }
+    compileSdkVersion 23
+    buildToolsVersion '23.0.0'
+    defaultConfig {
+        applicationId "com.doorcontrol.ruili.my.doorcontrol"
+        minSdkVersion 15
+        targetSdkVersion 22
+        versionCode 4
+        versionName "v4.1"
+        manifestPlaceholders = [
+                GETUI_APP_ID : "GVCxxrLzAmACN3ERhYnkn7",
+                GETUI_APP_KEY : "N8mPyaVFUIABbb0xQTgCn",
+                GETUI_APP_SECRET : "Ey8XMoXFEa9h7pycWOVQy9"
+        ]
+        ndk {
+            abiFilters "armeabi", "armeabi-v7a", "x86_64"
+        }
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+        debug {
+            signingConfig signingConfigs.release
+        }
+    }
+    lintOptions {
+        disable "ResourceType"
+    }
+/*    sourceSets {
+        main {
+            jniLibs.srcDirs = ['libs']
+        }
+    }*/
+    splits {
+        abi {
+            enable true
+            reset()
+            include 'armeabi', 'armeabi-v7a'
+            universalApk true //generate an additional APK that contains all the ABIs
+        }
+    }
+    // map for the version code
+    project.ext.versionCodes = ['armeabi': 1, 'armeabi-v7a': 2, 'arm64-v8a': 3, 'mips': 5, 'mips64': 6, 'x86': 8, 'x86_64': 9]
+    android.applicationVariants.all { variant ->
+        // assign different version code for each output
+        variant.outputs.each { output ->
+            output.versionCodeOverride =
+                    project.ext.versionCodes.get(output.getFilter(com.android.build.OutputFile.ABI), 0) * 1000000 + android.defaultConfig.versionCode
+        }
+    }
+}
+
+
+
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    testCompile 'junit:junit:4.12'
+    compile 'com.android.support:appcompat-v7:23.0.0'
+    compile 'com.google.code.gson:gson:2.2.4'
+    compile 'com.squareup.okhttp3:okhttp:3.2.0'
+    compile 'com.facebook.fresco:fresco:0.9.0'
+    compile 'com.squareup.picasso:picasso:2.5.2'
+    compile files('libs/BaiduLBS_Android.jar')
+    compile 'com.squareup.retrofit2:retrofit:2.1.0'
+    compile 'com.squareup.retrofit2:converter-gson:2.1.0'
+    compile 'com.android.support:design:23.0.0'
+    compile files('libs/tmassistantsdk_selfupdate_v1.0_20160713125345.jar')
+    compile files('libs/360update-5.0.7.jar')
+    compile 'com.getui:sdk:2.9.5.0'
+
+}

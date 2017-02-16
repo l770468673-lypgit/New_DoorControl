@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="8dp"
+                 >
+
+    <ListView
+        android:id="@+id/publicmessage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+
+    <TextView
+        android:text="数据为空"
+        android:layout_centerInParent="true"
+        android:id="@+id/message_list_textnull"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#c6c6c6"/>
+</RelativeLayout>

@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activitys.MainActivity">
+
+    <!--   头部spinner-->
+    <LinearLayout
+        android:id="@+id/top_spinnew"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#000000"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_gravity="center_vertical"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/home_sp_city"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:gravity="center"
+                android:text="您的小区"
+                android:textColor="#fff"
+                android:textSize="12sp"
+                android:background="#000000"
+                />
+
+            
+<!--            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@mipmap/down_head"/>-->
+        </LinearLayout>
+
+        <!--<LinearLayout-->
+            <!--android:layout_gravity="center_vertical"-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_weight="1"-->
+            <!--android:orientation="horizontal">-->
+
+            <!--<Button-->
+
+                <!--android:background="#000000"-->
+                <!--android:id="@+id/home_sp_place"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:gravity="center"-->
+                <!--android:text="请选择小区"-->
+                <!--android:textColor="#fff"-->
+                <!--android:textSize="12sp"/>-->
+
+            <!--<ImageView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_gravity="center"-->
+                <!--android:src="@mipmap/down_head"/>-->
+
+        <!--</LinearLayout>-->
+
+
+        <LinearLayout
+            android:id="@+id/lly_user_name"
+            android:layout_width="wrap_content"
+            android:layout_height="?attr/actionBarSize"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="8dp">
+
+            <TextView
+                android:layout_marginRight="4dp"
+                android:id="@+id/home_user_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="访客"
+                android:textColor="#fff"
+                android:textSize="12sp"/>
+
+            <com.doorcontrol.ruili.my.doorcontrol.Custom.CircleImageView
+                android:id="@+id/home_user_imgs"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:src="@mipmap/user_defalt_img"/>
+        </LinearLayout>
+    </LinearLayout>
+    <!-- 变换的文本-->
+
+    <FrameLayout
+        android:id="@+id/home_frg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/bottom_fly"
+        android:layout_below="@+id/top_spinnew"
+        />
+
+
+    <!--   底部导航  -->
+    <RelativeLayout
+        android:id="@+id/bottom_fly"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="#c8000000">
+
+        <RadioGroup
+            android:id="@+id/rgb"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="5dp">
+
+            <RadioButton
+                android:id="@+id/home_btn"
+                style="@style/style_text_select"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_weight="1"
+                android:button="@null"
+                android:drawableTop="@drawable/home_btn_select"
+                android:gravity="center"
+                android:text="首页"
+                android:textSize="12sp"/>
+
+            <View
+                android:id="@+id/textView"
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="1"
+                android:padding="20dp"/>
+
+            <RadioButton
+                android:id="@+id/Neighborhoods_btn"
+                style="@style/style_text_select"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:button="@null"
+                android:drawableTop="@drawable/community_btn_select"
+                android:gravity="center"
+                android:text="我的"
+                android:textSize="12sp"/>
+
+        </RadioGroup>
+
+
+    </RelativeLayout>
+
+
+
+    <ImageView
+        android:id="@+id/opendoorimg"
+        android:layout_centerInParent="true"
+        android:layout_width="300dp"
+        android:visibility="gone"
+        android:layout_height="300dp"
+        android:src="@mipmap/men"/>
+    <!--<com.doorcontrol.ruili.my.doorcontrol.Custom.MyView-->
+    <!--android:layout_marginBottom="5dp"-->
+    <!--android:layout_alignParentBottom="true"-->
+    <!--android:id="@+id/opendoor"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_centerInParent="true"-->
+    <!--android:layout_gravity="center"-->
+    <!--android:src="@drawable/opendoor_btn_select"/>-->
+    <ImageButton
+        android:id="@+id/opendoor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center"
+        android:layout_marginBottom="5dp"
+        android:background="#00000000"
+        android:bufferType="normal"
+        android:src="@drawable/opendoor_btn_select"/>
+
+
+</RelativeLayout>

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+
+        android:id="@+id/lly_houseOwnerid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lly_houseName"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="8dp"
+            android:text="家人id:"
+            android:textSize="16sp"/>
+
+        <EditText
+            android:id="@+id/item_houseOwnerid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="家人id"
+
+            android:textSize="14sp"/>
+
+    </LinearLayout>
+    <LinearLayout
+
+        android:id="@+id/lly_houseOwnername"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lly_houseOwnerid"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="8dp"
+            android:text="家人姓名:"
+            android:textSize="16sp"/>
+
+        <EditText
+            android:id="@+id/item_houseOwnername"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="家人姓名"
+            android:textSize="14sp"/>
+
+    </LinearLayout>
+   <!-- <LinearLayout
+
+        android:id="@+id/lly_phonenumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lly_houseOwnername"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="8dp"
+            android:text=" 家人手机号"
+            android:textSize="16sp"/>
+
+        <EditText
+            android:id="@+id/item_phonenumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="家人手机号"
+            android:textSize="16sp"/>
+
+    </LinearLayout>-->
+
+    <LinearLayout
+
+        android:id="@+id/lly_seq"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lly_houseOwnername"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="8dp"
+            android:text=" 家人优先级:"
+            android:textSize="16sp"/>
+
+        <EditText
+            android:id="@+id/item_seq"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="优先级"
+            android:textSize="14sp"/>
+
+    </LinearLayout>
+</LinearLayout>

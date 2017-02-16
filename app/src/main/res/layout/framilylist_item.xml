@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@drawable/key_homeid"
+        android:padding="8dp">
+
+        <LinearLayout
+            android:id="@+id/lly_houseId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="8dp"
+                android:text="房屋id:"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/item_houseId"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="房屋id"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
+        <!--<LinearLayout-->
+
+            <!--android:id="@+id/lly_houseName"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_below="@+id/lly_houseId"-->
+            <!--android:orientation="horizontal"-->
+            <!--android:padding="10dp">-->
+
+            <!--<TextView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginRight="8dp"-->
+                <!--android:text="房屋号"-->
+                <!--android:textSize="16sp" />-->
+
+            <!--<EditText-->
+                <!--android:id="@+id/item_houseName"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:hint="房屋号"-->
+                <!--android:textSize="16sp" />-->
+
+        <!--</LinearLayout>-->
+
+
+
+        <!--<LinearLayout-->
+            <!--android:id="@+id/lly_seq"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_below="@+id/lly_houseName"-->
+            <!--android:orientation="horizontal"-->
+            <!--android:padding="10dp">-->
+
+            <!--<TextView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginRight="8dp"-->
+                <!--android:text=" 优先级"-->
+                <!--android:textSize="16sp" />-->
+
+            <!--<EditText-->
+                <!--android:id="@+id/item_seq"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:hint="优先级"-->
+                <!--android:textSize="16sp" />
+
+        </LinearLayout>-->
+
+        <!--<LinearLayout-->
+
+            <!--android:id="@+id/lly_buildingName"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_below="@+id/lly_houseName"-->
+            <!--android:orientation="horizontal"-->
+            <!--android:padding="10dp">-->
+
+            <!--<TextView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginRight="8dp"-->
+                <!--android:text=" 房号"-->
+                <!--android:textSize="16sp" />-->
+
+            <!--<EditText-->
+                <!--android:id="@+id/item_build"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:hint="5"-->
+                <!--android:textSize="16sp" />-->
+
+        <!--</LinearLayout>-->
+
+     <!--   <LinearLayout
+
+            android:id="@+id/lly_communityName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/lly_buildingName"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="8dp"
+                android:text="社区"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/item_community"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="易慧家"
+                android:textSize="16sp" />
+
+        </LinearLayout>-->
+
+        <LinearLayout
+            android:id="@+id/ll_addview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/lly_houseId"
+            android:orientation="vertical">
+
+            <include
+                android:id="@+id/llinclude"
+                layout="@layout/view_ll_addpeson"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/lly_communityName" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+</LinearLayout>

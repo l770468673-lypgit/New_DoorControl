@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#000000"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/keymessage_activity_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:padding="12dp"
+            android:src="@mipmap/back_img"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:text="钥匙管理"
+            android:textColor="#fff"
+            android:textSize="20sp"/>
+    </RelativeLayout>
+    <android.support.design.widget.TabLayout
+        android:id="@+id/keymessage_tab"
+        app:tabIndicatorColor="@color/tab_seline"
+        app:tabSelectedTextColor="@color/tab_sel"
+        app:tabTextColor="@color/tab_black"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </android.support.design.widget.TabLayout>
+
+
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/key_message_vvp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+
+
+    <!--<RelativeLayout-->
+        <!--android:layout_margin="10dp"-->
+        <!--android:background="@drawable/key_homeid"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:padding="8dp">-->
+
+        <!--<LinearLayout-->
+            <!--android:padding="10dp"-->
+
+            <!--android:id="@+id/lly_homeid"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:orientation="horizontal">-->
+
+            <!--<TextView-->
+                <!--android:textSize="16sp"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginRight="8dp"-->
+                <!--android:text=" 用户id"/>-->
+
+            <!--<EditText-->
+                <!--android:textSize="16sp"-->
+
+                <!--android:id="@+id/key_houseId"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:hint="家庭ID"/>-->
+
+        <!--</LinearLayout>-->
+
+        <!--<LinearLayout-->
+
+            <!--android:padding="10dp"-->
+            <!--android:id="@+id/lly_homename"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_below="@+id/lly_homeid"-->
+            <!--android:orientation="horizontal">-->
+
+            <!--<TextView-->
+                <!--android:textSize="16sp"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginRight="8dp"-->
+                <!--android:text=" 家人姓名"/>-->
+
+            <!--<EditText-->
+                <!--android:textSize="16sp"-->
+                <!--android:id="@+id/key_houseOwnerName"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:hint="家人姓名"/>-->
+
+        <!--</LinearLayout>-->
+
+
+        <!--<LinearLayout-->
+
+            <!--android:padding="10dp"-->
+            <!--android:id="@+id/lly_homenumber"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_below="@+id/lly_homename"-->
+            <!--android:orientation="horizontal">-->
+
+            <!--<TextView-->
+                <!--android:textSize="16sp"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginRight="8dp"-->
+                <!--android:text=" 家人手机号"/>-->
+
+            <!--<EditText-->
+                <!--android:textSize="16sp"-->
+
+                <!--android:id="@+id/key_phoneNumber"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:hint="家人手机号"/>-->
+
+        <!--</LinearLayout>-->
+
+    <!--</RelativeLayout>-->
+        <!--<LinearLayout-->
+            <!--android:layout_below="@+id/lly_homenumber"-->
+            <!--android:orientation="horizontal"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content">-->
+            <!--<Button-->
+                <!--android:layout_weight="1"-->
+                <!--android:id="@+id/key_addfamily"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="添加家人"/>-->
+            <!--<Button-->
+                <!--android:id="@+id/key_removefamily"-->
+                <!--android:layout_weight="1"-->
+                <!--android:text="删除家人"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"/>-->
+
+        <!--</LinearLayout>-->
+
+
+
+
+
+</LinearLayout>

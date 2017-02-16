@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:descendantFocusability="blocksDescendants"
+              android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:text="用户名："
+            android:textSize="16sp"/>
+
+        <TextView
+            android:id="@+id/family_name_item"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:text="sssssssssss"
+
+            android:textSize="18sp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:text="手机号："
+            android:textSize="16sp"/>
+
+        <TextView
+            android:id="@+id/family_phone_item"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:text="sssssssssss"
+
+            android:textSize="18sp"/>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        >
+
+        <TextView
+            android:id="@+id/youxianji"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:text="优先级："
+            android:textSize="16sp"/>
+
+        <EditText
+            android:id="@+id/family_seq_item"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/youxianji"
+            android:layout_toRightOf="@+id/youxianji"
+            android:background="@null"
+            android:gravity="center"
+            android:paddingLeft="8dp"
+            android:text="sssssssssss"
+            android:textSize="18sp"/>
+
+        <Button
+            android:id="@+id/edittextchange"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/youxianji"
+            android:layout_alignParentRight="true"
+            android:background="@null"
+            android:text="编辑"
+            android:textColor="#F7921E"
+            android:textSize="14sp"/>
+
+
+    </RelativeLayout>
+
+</LinearLayout>

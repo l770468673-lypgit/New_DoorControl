@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+    >
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp">
+
+        <TextView
+            android:id="@+id/shequ"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="2dp"
+            android:text="dddd"/>
+
+        <ImageView
+            android:id="@+id/locaimage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/shequ"
+            android:layout_margin="2dp"
+            android:background="@mipmap/location_img"/>
+
+        <TextView
+            android:id="@+id/louhao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/shequ"
+            android:layout_margin="2dp"
+            android:layout_toRightOf="@+id/locaimage"
+            android:text="dddd"/>
+
+        <TextView
+            android:id="@+id/danyuan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/shequ"
+            android:layout_margin="2dp"
+            android:layout_toRightOf="@+id/louhao"
+            android:text="ccc"/>
+        <TextView
+            android:id="@+id/danyuans"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/shequ"
+            android:layout_margin="2dp"
+            android:layout_toRightOf="@+id/danyuan"
+            android:text="单元"/>
+
+        <TextView
+            android:id="@+id/fangjian"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/shequ"
+            android:layout_margin="2dp"
+            android:layout_toRightOf="@+id/danyuans"
+            android:text="fffff"/>
+
+
+
+        <ImageView
+            android:layout_centerInParent="true"
+            android:layout_alignParentRight="true"
+            android:background="@mipmap/rightin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </RelativeLayout>
+    　
+
+
+
+</RelativeLayout>

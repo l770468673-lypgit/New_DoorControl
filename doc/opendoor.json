@@ -1,0 +1,114 @@
+{
+
+  "resultCode": 0,
+  "data": [
+    {
+      "house": {
+        "houseId": 190,
+        "floorCode": 5,
+        "houseCode": 5,
+        "unitCode": 2,
+        "buildingId": 24,
+        "communityId": 8,
+        "houseName": "505",
+        "buildingName": "7号楼",
+        "communityName": "易慧家"
+      },
+      "houseOwners": [
+        {
+          "houseOwnerId": 129,
+          "houseOwnerName": "李共欢",
+          "phoneNumber": "15166689550",
+          "online": 0,
+          "seq": 0
+        }
+      ],
+      "holder": true
+    },
+    {
+      "house": {
+        "houseId": 192,
+        "floorCode": 1,
+        "houseCode": 1,
+        "unitCode": 5,
+        "buildingId": 24,
+        "communityId": 8,
+        "houseName": "101",
+        "buildingName": "7号楼",
+        "communityName": "易慧家"
+      },
+      "houseOwners": [
+        {
+          "houseOwnerId": 150,
+          "houseOwnerName": "李共欢",
+          "phoneNumber": "15166689550",
+          "online": 0,
+          "seq": 0
+        },
+        {
+          "houseOwnerId": 148,
+          "houseOwnerName": "2",
+          "phoneNumber": "13100000002",
+          "online": 0,
+          "seq": 1
+        },
+        {
+          "houseOwnerId": 147,
+          "houseOwnerName": "1",
+          "phoneNumber": "13100000001",
+          "online": 0,
+          "seq": 3
+        }
+      ],
+      "holder": true
+    },
+    {
+      "house": {
+        "houseId": 197,
+        "floorCode": 8,
+        "houseCode": 8,
+        "unitCode": 4,
+        "buildingId": 24,
+        "communityId": 8,
+        "houseName": "808",
+        "buildingName": "7号楼",
+        "communityName": "易慧家"
+      },
+      "houseOwners": [
+        {
+          "houseOwnerId": 151,
+          "houseOwnerName": "李共欢",
+          "phoneNumber": "15166689550",
+          "online": 0,
+          "seq": 0
+        }
+      ],
+      "holder": true
+    },
+    {
+      "house": {
+        "houseId": 220,
+        "floorCode": 20,
+        "houseCode": 2,
+        "unitCode": 3,
+        "buildingId": 26,
+        "communityId": 8,
+        "houseName": "2002",
+        "buildingName": "9号楼",
+        "communityName": "易慧家"
+      },
+      "houseOwners": [
+        {
+          "houseOwnerId": 181,
+          "houseOwnerName": "李共欢",
+          "phoneNumber": "15166689550",
+          "online": 0,
+          "seq": 0
+        }
+      ],
+      "holder": true
+    }
+  ],
+  "totalCount": 0
+
+}

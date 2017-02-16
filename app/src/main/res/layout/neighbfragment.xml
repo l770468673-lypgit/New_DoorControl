@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="#FFFFFF"
+              android:orientation="vertical"
+    >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="160dp"
+                android:background="#F7931E"
+                android:gravity="center"
+                android:orientation="vertical"
+                >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="6dp"
+                    android:gravity="center">
+
+                    <com.doorcontrol.ruili.my.doorcontrol.Custom.CircleImageView
+                        android:id="@+id/user_own_setting_img"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:src="@mipmap/user_defalt_img"/>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="6dp"
+                    android:gravity="center">
+
+                    <TextView
+                        android:id="@+id/user_own_setting_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="点击登陆"
+                        android:textColor="#fff"/>
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center">
+
+                    <TextView
+                        android:id="@+id/user_own_setting_phone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="  "
+                        android:textColor="#fff"/>
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <!--<LinearLayout-->
+            <!--android:layout_margin="8dp"-->
+            <!--android:id="@+id/neighbour_rgb"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:orientation="horizontal">-->
+
+            <!--<ImageView-->
+            <!--android:id="@+id/neighbour_notice"-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="wrap_content"-->
+
+            <!--android:layout_weight="1"-->
+            <!--android:src="@mipmap/neighbour_notice"-->
+            <!--android:button="@null"-->
+            <!--android:gravity="center"-->
+            <!--/>-->
+
+            <!--<ImageView-->
+            <!--android:id="@+id/neighbour_private_message"-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_weight="1"-->
+            <!--android:button="@null"-->
+            <!--android:src="@mipmap/neighbour_private_message"-->
+            <!--android:gravity="center"-->
+            <!--android:text="@null"-->
+            <!--/>-->
+
+            <!--<ImageView-->
+            <!--android:id="@+id/neighbour_wuyebaixiu"-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_weight="1"-->
+            <!--android:button="@null"-->
+            <!--android:src="@mipmap/neighbour_wuyebaixiu"-->
+            <!--android:gravity="center"-->
+            <!--/>-->
+
+            <!--<ImageView-->
+            <!--android:id="@+id/neighbour_wuyetousu"-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_weight="1"-->
+            <!--android:src="@mipmap/neighbour_wuyetousu"-->
+            <!--android:gravity="center"-->
+            <!--/>-->
+
+            <!--</LinearLayout>-->
+
+
+            <LinearLayout
+                android:id="@+id/keymessage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:orientation="vertical"
+                android:paddingTop="8dp"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginLeft="18dp"
+                    android:text="钥匙管理"
+                    android:textColor="#6A6A6A"
+                    android:textSize="12sp"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#BEBEBE"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/opendoorRecord"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:orientation="vertical"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginLeft="18dp"
+                    android:text="开门记录"
+                    android:textColor="#6A6A6A"
+                    android:textSize="12sp"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#BEBEBE"/>
+            </LinearLayout>
+
+            <!--<LinearLayout-->
+            <!--android:id="@+id/tellsetting"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:orientation="vertical"-->
+            <!--android:paddingTop="8dp"-->
+            <!--&gt;-->
+
+            <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginBottom="8dp"-->
+            <!--android:layout_marginLeft="18dp"-->
+            <!--android:text="房屋列表"-->
+            <!--android:textColor="#6A6A6A"-->
+            <!--android:textSize="12sp"/>-->
+
+            <!--<View-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="1dp"-->
+            <!--android:background="#BEBEBE"/>-->
+            <!--</LinearLayout>-->
+
+            <LinearLayout
+                android:id="@+id/abouthelp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:orientation="vertical"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginLeft="18dp"
+                    android:text="修改登陆密码"
+                    android:textColor="#6A6A6A"
+                    android:textSize="12sp"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#BEBEBE"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/checkupdate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:orientation="vertical"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginLeft="18dp"
+                    android:text="检查更新"
+                    android:textColor="#6A6A6A"
+                    android:textSize="12sp"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#BEBEBE"/>
+            </LinearLayout>
+
+            <!--<LinearLayout-->
+            <!--android:id="@+id/onlysetting"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:orientation="vertical"-->
+            <!--android:paddingTop="8dp"-->
+            <!--&gt;-->
+
+            <!--<TextView-->
+            <!--android:id="@+id/youxianji"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginBottom="8dp"-->
+            <!--android:layout_marginLeft="18dp"-->
+            <!--android:text="设置优先级"-->
+            <!--android:textColor="#6A6A6A"-->
+            <!--android:textSize="12sp"/>-->
+
+            <!--<View-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="1dp"-->
+            <!--android:background="#BEBEBE"/>-->
+            <!--</LinearLayout>-->
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>
